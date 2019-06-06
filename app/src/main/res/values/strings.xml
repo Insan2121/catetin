@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Catetin</string>
+
+    <string name="write">Just write down your notes</string>
+    <string name="apps">Catetin is media share platform for everyone who want to share their note</string>
+    <string name="share">Just share on one click</string>
+</resources>
