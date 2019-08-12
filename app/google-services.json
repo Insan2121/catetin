@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "124999264597",
+    "firebase_url": "https://datamahasiswa-bf558.firebaseio.com",
+    "project_id": "datamahasiswa-bf558",
+    "storage_bucket": "datamahasiswa-bf558.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124999264597:android:4c4676793f026ea9",
+        "android_client_info": {
+          "package_name": "com.example.catetin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124999264597-lnrfvl4vc73e1b0hqd7b8lp7a1s145q5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.catetin",
+            "certificate_hash": "a30c11e48625e847f7446585b92a157f047a22a6"
+          }
+        },
+        {
+          "client_id": "124999264597-7q3iastst9cfrngaog4eq5ek0tplp2ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi2IpGjRpeEaQljty75TUAUdqd5n1VIek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124999264597-7q3iastst9cfrngaog4eq5ek0tplp2ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124999264597:android:44fa7083f4b4f3e0",
+        "android_client_info": {
+          "package_name": "com.example.datamahasiswa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124999264597-0aufis1fvqdj4408sp80ke95grej7qf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datamahasiswa",
+            "certificate_hash": "a30c11e48625e847f7446585b92a157f047a22a6"
+          }
+        },
+        {
+          "client_id": "124999264597-7q3iastst9cfrngaog4eq5ek0tplp2ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi2IpGjRpeEaQljty75TUAUdqd5n1VIek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124999264597-7q3iastst9cfrngaog4eq5ek0tplp2ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

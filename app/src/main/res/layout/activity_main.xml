@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="BottomAppBar"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation"
+            app:fabCradleRoundedCornerRadius="@dimen/_10sdp"
+            app:fabCradleMargin="@dimen/_5sdp"
+            app:fabAttached="true"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/colorYellow"
+            style="@style/Widget.MaterialComponents.BottomAppBar"
+            >
+        </android.support.design.bottomappbar.BottomAppBar>
 
-</android.support.constraint.ConstraintLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:src="@drawable/add"
+            app:layout_anchor="@+id/bottomAppBar"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</LinearLayout>

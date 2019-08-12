@@ -7,5 +7,8 @@
     <color name="colorOrange">#D9681C</color>
     <color name="colorGreen">#44917D</color>
     <color name="colorWhite">#FFFF</color>
+    <color name="colorBlack">#000020</color>
+    <color name="coloGray">#EBEADE</color>
+    <color name="colorOldGray">#8F8275</color>
 
 </resources>

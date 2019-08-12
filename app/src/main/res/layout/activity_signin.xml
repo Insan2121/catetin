@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".auth.SignInActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/colorBlack"/>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/logo"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/coloGray"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/card__gray_rounded">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/man_user"/>
+                    <TextView
+                        android:id="@+id/tv_login_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="username"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorOldGray"
+                        android:textColorHint="@color/colorOldGray"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/coloGray"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/card__gray_rounded">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/locked_padlock"/>
+                    <TextView
+                        android:id="@+id/tv_login_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="password"
+                        android:textColor="@color/colorOldGray"
+                        android:textColorHint="@color/colorOldGray"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/_15ssp"
+                        android:inputType="textPassword"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_11sdp"
+                        android:src="@drawable/eye_visibility"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/btn_get_started"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorOldGray"
+                    android:layout_marginRight="@dimen/_5sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="or"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/colorOldGray"/>
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@color/colorOldGray"/>
+            </LinearLayout>
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -7,13 +7,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 import com.example.catetin.adapter.IntroViewPager;
+import com.example.catetin.auth.SignInActivity;
 import com.example.catetin.model.ScreenItem;
 
 import java.util.ArrayList;
@@ -98,7 +97,7 @@ public class IntroActivity extends AppCompatActivity {
         btngetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(IntroActivity.this, LoginActivity.class));
+                startActivity(new Intent(IntroActivity.this, SignInActivity.class));
 
                 savePrefsData();
                 finish();
