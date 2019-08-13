@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    tools:context=".PreIntroActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/undraw_note_list_etto"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to CATETIN"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/colorOldGray"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="What are you looking for ?"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/colorOrange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go search for it !"
+                android:textColor="@color/colorOrange"/>
+
+            <Button
+                android:id="@+id/btn_ready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am Ready"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_13ssp"
+                android:background="@drawable/btn_get_started"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

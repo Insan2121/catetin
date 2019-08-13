@@ -8,6 +8,33 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/_10sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/logo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ATETIN"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/_20ssp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,15 +43,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="BottomAppBar"
+            android:outlineAmbientShadowColor="@color/colorYellow"
             android:layout_alignParentBottom="true"
-            app:menu="@menu/bottom_navigation"
             app:fabCradleRoundedCornerRadius="@dimen/_10sdp"
             app:fabCradleMargin="@dimen/_5sdp"
             app:fabAttached="true"
             android:layout_gravity="bottom"
-            android:backgroundTint="@color/colorYellow"
-            style="@style/Widget.MaterialComponents.BottomAppBar"
+            app:layout_anchorGravity="top"
             >
+            //style="@style/Widget.MaterialComponents.BottomAppBar"
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.BottomNavigationView
+                    android:id="@+id/bottom_nav_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    app:itemIconTint=""
+                    android:background="@color/colorWhite"
+                    app:menu="@menu/bottom_navigation"
+                    app:itemIconSize="@dimen/_18sdp"
+                    android:outlineSpotShadowColor="@color/colorBlack"
+                    android:outlineAmbientShadowColor="@color/colorBlack"
+                    >
+                </android.support.design.widget.BottomNavigationView>
+
+            </FrameLayout>
+
         </android.support.design.bottomappbar.BottomAppBar>
 
         <android.support.design.widget.FloatingActionButton
@@ -33,6 +82,9 @@
             android:layout_height="wrap_content"
             app:fabSize="normal"
             android:src="@drawable/add"
+            android:translationZ="@dimen/_1sdp"
+            app:rippleColor="@color/colorWhite"
+            android:backgroundTint="@color/colorYellow"
             app:layout_anchor="@+id/bottomAppBar"/>
 
     </android.support.design.widget.CoordinatorLayout>

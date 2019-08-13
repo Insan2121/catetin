@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/menu"
-        android:title=""/>
-
-
-    <item
-        android:id="@+id/nav_heart"
-        android:icon="@drawable/ic_search"
+        android:id="@+id/nav_sidebar"
+        android:icon="@drawable/ascending_bars"
         android:title=""/>
 
     <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_notification"
+        android:id="@+id/action_empty"
+        android:title=""
+        android:checkable="false"
+        android:checked="false"
+        android:enabled="false"
+        />
+    <item
+        android:id="@+id/action_empty2"
+        android:title=""
+        android:checkable="false"
+        android:checked="false"
+        android:enabled="false"
+        />
+
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/notification"
         android:title=""/>
 
 

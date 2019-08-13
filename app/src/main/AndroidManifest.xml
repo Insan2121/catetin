@@ -11,15 +11,14 @@
         android:roundIcon="@mipmap/ic_launchercatetin_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".auth.SignInActivity"></activity>
+        <activity android:name=".PreIntroActivity"></activity>
+        <activity android:name=".auth.SignInActivity" />
         <activity
             android:name=".IntroActivity"
             android:theme="@style/AppIntro" />
         <activity
             android:name=".StartActivity"
-            android:theme="@style/AppIntro">
-
-        </activity>
+            android:theme="@style/AppIntro"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
